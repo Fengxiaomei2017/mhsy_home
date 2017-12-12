@@ -52,7 +52,7 @@
             'text': '合作共赢，等着您\n欢迎您的加入，加盟代理'
           },
           {
-            'imgaddr': 'static/img/zhixunfuwu.jpg',
+            'imgaddr': 'static/img/zhixunfuwu1.jpg',
             'text': `我想`
           }
         ]
@@ -88,7 +88,7 @@
       display: block;
       height: 60px;
       line-height: 60px;
-      font-size: 19px;
+      font-size: 1.3em;
       font-weight: bold;
       text-align: center;
       color: #4D555D;
@@ -103,26 +103,27 @@
     .wrapper .img_inbox {
       display: inline-block;
       position: relative;
-      width: 49.5%;
-      height: 100vh;
-      margin-right: 1%;
+      width: 25%;
+      height: 50vh;
       margin-bottom: 1%;
       overflow: hidden;
     }
     .img_wrapper .img_inbox .acla {
       display: block;
-      width: 80%;
-      height: 80%;
+      width: 100%;
+      height: 100%;
       margin: 20% 0 0 8%;
     }
-    /*.wrapper .img_inbox:first-child {
-      background-color: #E86843;
-    }*/
+    .wrapper .img_inbox:first-child .acla {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+    }
     .wrapper .img_inbox:nth-child(2) {
-      background-color: #fff;
+      background: #fff;
     }
     .wrapper .img_inbox:nth-child(4) {
-      background-color: #FF7546;
+      background: url(zhixunfuwu2.jpg) repeat-x;
     }
     .wrapper .img_inbox:nth-child(2n) {
       margin-right: 0;
@@ -194,7 +195,8 @@
         z-index: 3;
         transform: translate(-50%, 0);
         width: 90%;
-        font-size: 1.5rem;
+        line-height: 20px;
+        font-size: 1.2em;
         color: #333;
         text-align: center;
         background-color: none;

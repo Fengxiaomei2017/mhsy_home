@@ -79,10 +79,7 @@
 </script>
 <style scoped>
 .daohang{
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 100;
+  background-color: #373D41;
 }
 .qiyejies{
   width: 80%;

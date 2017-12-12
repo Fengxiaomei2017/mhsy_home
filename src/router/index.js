@@ -6,6 +6,7 @@ import Gwxinwen from '@/components/gwxinwen/Gwxinwen.vue'
 import Gwxwquanbu from '@/components/gwxwquanbu/Gwxwquanbu.vue'
 import Gwdaohangmoban from '@/components/gwdaohangmoban/Gwdaohangmoban.vue'
 import Gwlianxiwomen from '@/components/gwlianxiwomen/Gwlianxiwomen.vue'
+import Gwdenglu from '@/components/gwdenglu/Gwdenglu.vue'
 Vue.use(Router)
 
 export default new Router({
@@ -18,7 +19,13 @@ export default new Router({
     },
     {
       path: '/shouye',
-      component: Shouye
+      component: Shouye,
+      children: [
+        {
+          path: '/denglu',
+          component: Gwdenglu
+        }
+      ]
     },
     {
       path: '/qiyejies',
